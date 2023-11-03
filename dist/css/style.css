@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color:#fffffe;
+}
+h2.program {
+  text-align: center;
+  color: black;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+}
+.isi{
+  text-align: justify;
+}
+
+
+header.navbar-container {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  background-color: #fffffe;
+  border-radius: 5px;
+}
+
+header.navbar-container .nav-list ul {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem 1rem;
+}
+
+header.navbar-container .nav-list li {
+  list-style-type: none;
+}
+
+header.navbar-container .nav-list li a {
+  text-decoration: none;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: black;
+  padding: 0.5rem 1.5rem;
+  border-radius: 5px; 
+  transition: all 0.2s ease-in-out;
+}
+
+header.navbar-container .nav-list li:hover a {
+  background-color: #ffcc70; 
+  color: white;
+}
+
+header.navbar-container .logo img {
+  width: 100px;
+}
+main {
+  padding-top: 60px;
+  display: flex;
+  gap: 1.5rem;
+}
+
+#content {
+  flex: 5;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 2rem 2rem;
+}
+
