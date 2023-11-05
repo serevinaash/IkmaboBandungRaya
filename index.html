@@ -29,14 +29,22 @@
           <li>
             <a href="#sejarah">Sejarah</a>
           </li>
-          <li>
-            <a href="#kegiatan">Kegiatan</a>
+          <li class="dropdown">
+            <a href="javascript:void(0)">Kegiatan</a>
+            <ul class="dropdown-content">
+              <li><a href="#pelantikan">Pelantikan</a></li>
+              <li><a href="#ramadhan">Ramadhan</a></li>
+              <li><a href="#tasyakuran">Tasyakuran</a></li>
+              <li><a href="#msmb">MSMB</a></li>
+              <li><a href="#first-gathering">First Gathering</a></li>
+            </ul>
           </li>
           <li>
             <a href="#kontak">Kontak</a>
           </li>
         </ul>
       </nav>
+      
     </header>
 
     <main>
@@ -53,7 +61,7 @@
           </p>
         </article>
 
-        <article id="kegiatan" class="card">
+        <article id="pelantikan" class="card">
           <h2>Kegiatan</h2>
           <img src="dist/img/pelantikan.png" alt="pelantikan" class="featured-image" />
           <p>
@@ -61,14 +69,14 @@
           </p>
         </article>
 
-        <article class="card">
+        <article id="ramadhan" class="card">
           <h2>Ramadhan</h2>
           <img src="dist/img/ramadhan.png" alt="pelantikan" class="featured-image" />
           <p>
             Ramadhan festival yang diadakan dibandung dan dipartisipasi oleh banyak anak anak
           </p>
         </article>
-          <article class="card">
+          <article id="tasyarkuran" class="card">
             <h2>Tasyakuran</h2>
             <img src="dist/img/tasyarkuran.png" alt="pelantikan" class="featured-image" />
             <p>
@@ -76,7 +84,7 @@
           </p>
 
          </article>
-         <article class="card">
+         <article id="msmb" class="card">
           <h2>MSMB</h2>
           <img src="dist/img/msmb.png" alt="pelantikan" class="featured-image" />
           <p>
@@ -84,7 +92,7 @@
           </p>
        </article>
 
-       <article class="card">
+       <article id="first" class="card">
         <h2>First Gathering</h2>
         <img src="dist/img/first.png" alt="pelantikan" class="featured-image" />
         <p    >
@@ -119,5 +127,17 @@
     <footer>
     <p>Ikatan Masiswa Bogor &#169; 2019, serevinaash</p>
     </footer>
+    <script type="javascript">
+      document.addEventListener("click", function(event) {
+        var dropdowns = document.querySelectorAll(".dropdown");
+        for (var i = 0; i < dropdowns.length; i++) {
+          if (!dropdowns[i].contains(event.target)) {
+            var dropdownContent = dropdowns[i].querySelector(".dropdown-content");
+            dropdownContent.style.display = "none";
+          }
+        }
+      });
+      
+    </script>
   </body>
 </html>
