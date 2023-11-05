@@ -77,7 +77,9 @@ main {
   gap: 2rem 2rem;
 }
 .btn-1{
-  width: 30px;
+  width: 150px;
+  height: 50px;
   background-color: #ffd803; 
+  border: 1px #ffd803; 
+  font-size: 20px; 
 }
-
