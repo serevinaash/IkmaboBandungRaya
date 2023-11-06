@@ -48,6 +48,13 @@ nav a:hover {
   object-fit: cover;
   object-position: center;
 }
+.featured-imagee {
+  width: 200px;
+  max-height: 350px;
+  object-fit: cover;
+  object-position: center;
+  text-align: center;
+}
 
 .profile img {
   width: 200px;
@@ -58,6 +65,10 @@ nav a:hover {
   border-radius: 5px;
   padding: 20px;
   margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 
@@ -129,8 +140,48 @@ main {
   gap: 1rem 2rem;
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin: 10px 0;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+button {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #ffcc70;
+}
+
 aside {
   flex: 1;
+  align-content: center;
+}
+.social {
 }
 
 @media screen and (max-width: 1000px) {
